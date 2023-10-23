@@ -1,0 +1,103 @@
+{
+  "monster": [
+    {
+      "id": {
+        "$oid": "641d8cd9df6798a2954b1556"
+      },
+      "title": "Monster Black",
+      "price": 9.99,
+      "stock": 99,
+      "img": "./img/black.png"
+    },
+    {
+      "id": {
+        "$oid": "641d90dfdf6798a2954b1563"
+      },
+      "title": "Monster Blue Light",
+      "price": 9.99,
+      "stock": 99,
+      "img": "./img/blue.png"
+    },
+    {
+      "id": {
+        "$oid": "641d9120df6798a2954b1565"
+      },
+      "title": "Monster Blue Dark",
+      "price": 9.99,
+      "stock": 99,
+      "img": "./img/cian.png"
+    },
+    {
+      "id": {
+        "$oid": "641d9131df6798a2954b1566"
+      },
+      "title": "Monster Orange",
+      "price": 9.99,
+      "stock": 99,
+      "img": "./img/orange.png"
+    },
+    {
+      "id": {
+        "$oid": "641d914adf6798a2954b1567"
+      },
+      "title": "Monster Green",
+      "price": 9.99,
+      "stock": 99,
+      "img": "./img/green.png"
+    },
+    {
+      "id": {
+        "$oid": "641d914ddf6798a2954b1568"
+      },
+      "title": "Monster Red",
+      "price": 9.99,
+      "stock": 99,
+      "img": "./img/red.png"
+    },
+    {
+      "id": {
+        "$oid": "641d9151df6798a2954b156a"
+      },
+      "title": "Monster Pink",
+      "price": 9.99,
+      "stock": 99,
+      "img": "./img/orangered.png"
+    },
+    {
+      "id": {
+        "$oid": "641d9153df6798a2954b156b"
+      },
+      "title": "Monster Pinkier",
+      "price": 9.99,
+      "stock": 99,
+      "img": "./img/pink.png"
+    },
+    {
+      "id": {
+        "$oid": "641d9155df6798a2954b156c"
+      },
+      "title": "Monster Even Pinkier",
+      "price": 9.99,
+      "stock": 99,
+      "img": "./img/pinkk.png"
+    },
+    {
+      "id": {
+        "$oid": "641d9157df6798a2954b156d"
+      },
+      "title": "Monster Purple",
+      "price": 9.99,
+      "stock": 99,
+      "img": "./img/purple.png"
+    },
+    {
+      "id": {
+        "$oid": "641d915adf6798a2954b156e"
+      },
+      "title": "Monster Yellow",
+      "price": 9.99,
+      "stock": 99,
+      "img": "./img/yellow.png"
+    }
+  ]
+}

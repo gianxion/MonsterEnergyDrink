@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  <title>Products</title>
+  <link rel="stylesheet" type="text/css" href="products.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+  <h1 onclick="myFunction()">Products</h1>
+
+  <div class="button-container">
+    <button class="back-button" onclick="myFunction()">⬅️ Back</button>
+    <button class="cart-button" onclick="gotocart()">Cart 🛒</button>
+  </div>
+  <table id="productTable">
+    <tr>
+      <th></th>
+      <th>Product</th>
+      <th>Price for 6</th>
+      <th class="quantitybox">Quantity</th>
+      <th></th>
+    </tr>
+  </table>
+  <!-- Add Item Modal -->
+  <div id="addItemModal" class="modal-overlay">
+    <div class="modal">
+      <h2>Item Added!</h2>
+      <p>Your item has been added to the cart.</p>
+      <button class="modalButton" onclick="closeModal()" onclick="closeModalCart()">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <div id="cartModal" class="modal-overlay">
+    <div class="modal">
+      <h2>Error:</h2>
+      <p>You need to login or register first</p>
+      <button class="modalButton" onclick="loginModal()" onclick="closeModalCart()">
+        Login
+      </button>
+      <button class="modalButton" onclick="registerModal() ; closeModalCart()">
+        Register
+      </button>
+      <button class="modalButton" onclick="closeModalCart()">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <div id="loginModal" class="modal-overlay">
+    <div class="modal">
+      <h2>Login:</h2>
+      <form>
+        <label for="loginEmail">Email:</label><br />
+        <input type="email" id="loginEmail" name="loginEmail" /><br />
+        <label for="loginPassword">Password:</label><br />
+        <input type="password" id="loginPassword" name="loginPassword" /><br />
+        <button class="modalButton" type="button" onclick="login(); closeModalCart()">
+          Login
+        </button>
+        <button class="modalButton" type="button" onclick="closeLoginModal(); closeModalCart()">
+          Cancel
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div id="registerModal" class="modal-overlay">
+    <div class="modal">
+      <h2>Register:</h2>
+      <form>
+        <label for="registerEmail">Email:</label><br />
+        <input type="email" id="registerEmail" name="register" /><br />
+        <label for="registerPassword">Password:</label><br />
+        <input type="password" id="registerPassword" name="registerPassword" /><br />
+        <label for="registerPassword2">Confirm Password:</label><br />
+        <input type="password" id="registerPassword2" name="registerPassword2" /><br />
+        <button class="modalButton" type="button" onclick="register() ; closeModalCart()">
+          Register
+        </button>
+        <button class="modalButton" type="button" onclick="closeRegisterForm(); closeModalCart()">
+          Cancel
+        </button>
+      </form>
+    </div>
+  </div>
+  <div id="addItemModalF" class="modal-overlay">
+    <div class="modal">
+      <h2>Register Error:</h2>
+      <p>Your Email or password are incorect.</p>
+      <button class="modalButton" onclick="closeModalF()">
+        Close
+      </button>
+    </div>
+  </div>
+  <div id="addItemModal3" class="modal-overlay">
+    <div class="modal">
+      <h2>Register</h2>
+      <p>You have been successfully registered.</p>
+      <button class="modalButton" onclick="closeModal()">
+        Close
+      </button>
+    </div>
+  </div>
+  <script src="products_script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monster Energy Drink</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+  <section class="sec">
+    <header>
+      <a href="/" class="logo"><img src="./img/logo.png" class="logo" /></a>
+
+
+      <div id="registerForm" class="overlay" style="display: none;">
+        <div class="form-container">
+          <h2>Register</h2>
+          <label for="email2">Email:</label>
+          <input type="email" id="email2" placeholder="Enter your email">
+
+          <label for="password2">Password:</label>
+          <input type="password" id="password2" placeholder="Enter your password">
+          <label for="password2">Confirm Password:</label>
+          <input type="password" id="password3" placeholder="Enter your password">
+
+          <button class="custom-btn" onclick="register()">Register</button>
+          <button class="custom-btn" onclick="closeRegisterForm()">Close</button>
+        </div>
+      </div>
+
+     
+          
+          <div class="menu">
+            <ul>
+
+              <li>
+                <a onclick="gotoproducts()">
+                  Products</a>
+              </li>
+              <li>
+                <a onclick="gotocart()">
+                  Cart</a>
+              </li>
+
+              <li>
+                <a onclick="replaceText()">
+                  Contact</a>
+              </li>
+              <li>
+                <form id="form" class="form">
+                  <input type="email" class="email" id="email" placeholder="Email" required><b></b>
+                  <input type="button" class="register" onclick="openRegisterForm()" id="register" value="Register">
+                  <br><br>
+                  <input type="password" class="password" id="password" placeholder="Password" required>
+                  <input type="submit" class="login" id="login" value="Login"><a></a>
+                </form>
+
+              </li>
+            </ul>
+          </div>
+    </header>
+    <div class="content">
+      <div class="textBox" id="textBox">
+        <h2 id="headline">That's What<br /><span>
+            I like !</span>
+        </h2>
+        <p id="para">
+          All Monster products here in one place! Place your order and get the energy you need !
+        </p>
+        <button class="btn" id="btn" onclick="gotoproducts()">Buy Products</button>
+      </div>
+      <div class="imgBox">
+        <img src="./img/black.png" class="monster">
+      </div>
+    </div>
+
+    <ul class="thumb">
+      <li></li>
+      <li><img src="./img/black.png"
+          onclick="imgSlider('./img/black.png');changeBgColor('linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,5,1) 38%, rgba(255,4,0,1) 100%)')">
+      </li>
+      <li><img src="./img/blue.png"
+          onclick="imgSlider('./img/blue.png');changeBgColor('linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,5,1) 38%, rgba(0,224,255,1) 100%)')">
+      </li>
+      <li><img src="./img/cian.png"
+          onclick="imgSlider('./img/cian.png');changeBgColor('linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,5,1) 38%, rgba(0,255,222,1) 100%)')">
+      </li>
+      <li><img src="./img/orange.png"
+          onclick="imgSlider('./img/orange.png');changeBgColor('linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,5,1) 38%, rgba(255,132,0,1) 100%)')">
+      </li>
+      <li><img src="./img/green.png"
+          onclick="imgSlider('./img/green.png');changeBgColor(' linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,5,1) 38%, rgba(56,255,0,1) 100%)')">
+      </li>
+      <li><img src="./img/orangered.png"
+          onclick="imgSlider('./img/orangered.png');changeBgColor('linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,5,1) 38%, rgba(172,0,0,1) 100%)')">
+      </li>
+      <li><img src="./img/pink.png"
+          onclick="imgSlider('./img/pink.png');changeBgColor('linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,5,1) 38%, rgba(250,88,0,1) 100%)')">
+      </li>
+      <li><img src="./img/pinkk.png"
+          onclick="imgSlider('./img/pinkk.png');changeBgColor('linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,15,15,1) 38%, rgba(255,81,234,1) 100%)')">
+      </li>
+      <li><img src="./img/purple.png"
+          onclick="imgSlider('./img/purple.png');changeBgColor(' linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,15,15,1) 38%, rgba(222,0,250,1) 100%)')">
+      </li>
+      <li><img src="./img/red.png"
+          onclick="imgSlider('./img/red.png');changeBgColor('linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,15,15,1) 38%, rgba(193,19,0,1) 100%)')">
+      </li>
+      <li><img src="./img/white.png"
+          onclick="imgSlider('./img/white.png');changeBgColor(' linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,15,15,1) 38%, rgba(250,250,250,1) 100%)')">
+      </li>
+      <li><img src="./img/yellow.png"
+          onclick="imgSlider('./img/yellow.png');changeBgColor('linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,15,15,1) 38%, rgba(250,235,0,1) 100%)')">
+      </li>
+      </li>
+    </ul>
+
+    <ul class="sci">
+      <li>
+        <a href="https://www.facebook.com/MonsterEnergy/" target="_blank"><img src="./img/facebook.png"></a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com/MonsterEnergy/" target="_blank"><img src="./img/twitter.png"></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/MonsterEnergy/" target="_blank"><img src="./img/instagram.png"></a>
+      </li>
+    </ul>
+    
+    <script src="index_script.js"></script>
+    <div id="app"></div>
+    <!-- Add Item Modal -->
+    <div id="addItemModal"
+      style="display: none; position: fixed; margin-top: 0; left: 0; top: 0; width: 100%; height: 100%; background-color: transparent; z-index: 1000;">
+      <div
+        style="background-color: #fff; margin: 15% auto; padding: 20px; width: 300px; ">
+        <h2>Register</h2>
+        <p>You have been successfully registered.</p>
+        <button onclick="closeModal()" onmouseover="this.style.backgroundColor='#ddd';"
+          onmouseout="this.style.backgroundColor='#f4f4f4';" onclick="closeModalCart()"
+          style="padding: 10px 15px; border: 2px solid #333; background-color: #f4f4f4; cursor: pointer; transition: background-color 0.3s ease; outline: none;">Close</button>
+      </div>
+    </div>
+    <div id="addItemModalF"
+      style="display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: transparent; z-index: 1000;">
+      <div
+        style="background-color: #fff; margin: 0 auto; padding: 20px; width: 300px;">
+        <h2>Register Error:</h2>
+        <p>Your Email or password are incorect.</p>
+        <button onclick="closeModalF()" onmouseover="this.style.backgroundColor='#ddd';"
+          onmouseout="this.style.backgroundColor='#f4f4f4';" onclick="closeModalCart()"
+          style="padding: 10px 15px; border: 2px solid #333; background-color: #f4f4f4; cursor: pointer; 
+          transition: background-color 0.3s ease; outline: none;">Close</button>
+      </div>
+    </div>
+    <div id="cartModal"
+      style="display: none; position: fixed; left: 0; top: 0; width: 100%;
+       height: 100%; background-color: transparent; z-index: 1000;">
+      <div
+        style="background-color: #fff; margin: 0% auto; padding: 20px; width: 300px; ">
+        <h2>Error:</h2>
+        <p>You need to login or register first</p>
+        <button onclick="closeModalCart()" onmouseover="this.style.backgroundColor='#ddd';"
+          onmouseout="this.style.backgroundColor='#f4f4f4';" onclick="closeModalCart()"
+          style="padding: 10px 15px; border: 2px solid #333; background-color: #f4f4f4; cursor: pointer; transition: background-color 0.3s ease; outline: none;">Close</button>
+
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

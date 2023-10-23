@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  <title>Cart</title>
+  <link rel="stylesheet" type="text/css" href="cart.css">
+</head>
+
+<body>
+
+<div class="topmenucart2">
+
+<h1 class="h1carttitle">Cart</h1>
+</div>
+  <div class="topmenucart1">
+  <button id="homecartbtn" onclick="goHome()">Home 🏠</button>
+  <button id="productcartbtn" onclick="gotoproducts()">Products 📦</button>
+ 
+  </div> 
+
+  <div id="addressFormContainer">
+    <form id="addressForm">
+      <h2>Please fill the address information to proceed</h2>
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+      <label for="zipCode">Zip Code:</label>
+      <input type="text" id="zipCode" name="zipCode" required>
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required>
+      <button type="submit">Submit</button>
+      <button type="submit" onclick="closeAddressForm()">Close</button>
+    </form>
+  </div>
+  <!-- Remove Item Modal -->
+<div id="removeItemModal" class="modal">
+  <div class="modal-content">
+      <h2>Remove Item</h2>
+      <p>Are you sure you want to remove this item from the cart?</p>
+      <button id="confirmRemoveButton">Confirm</button>
+      <button onclick="closeRemoveModal()" onmouseover="this.style.backgroundColor='#ddd';" onmouseout="this.style.backgroundColor='#f4f4f4';" onclick="closeModalCart()" style="padding: 10px 15px; border: 2px solid #333; background-color: #f4f4f4; cursor: pointer; transition: background-color 0.3s ease; outline: none;"
+      style="padding: 10px 15px; border: 2px solid #333; background-color: #f4f4f4; cursor: pointer; transition: background-color 0.3s ease; outline: none;">Cancel</button>
+  </div>
+</div>
+
+  <div class="tabletable">
+    <table id="cartTable">
+      <tr>
+        <th class="box1table"></th>
+        <th class="box2table">Product</th>
+        <th class="box3table" >Price</th>
+        <th class="box3table">Quantity</th>
+        <th class="box4table"></th>
+      </tr>
+    </table>
+  </div>
+   <div>
+
+  <p id="totalPrice">Total Price: €0</p>
+</div>
+ <div class="button-container">
+  <button id="checkoutButton" onclick="showAddressForm();
+   ">Purchase 🛒</button>
+</div>
+<div class="checkbox-container">
+  <p>Same address as previews
+
+    <input onclick="fetchLastOrderAndAsk(localStorage.userId)" type="checkbox" id="myCheckbox">
+  </p>
+</div>
+
+  <script src="cart_script.js">  </script>
+
+</body>
+
+</html>
