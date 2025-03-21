@@ -24,8 +24,6 @@ table {
   border-collapse: collapse;
 }
 
-
-
 th,
 td {
   padding: 12px 8px;
@@ -80,7 +78,6 @@ button {
   letter-spacing: 1px;
   margin: 10px 0; /* Removed horizontal margins */
 }
-
 
 button:hover {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
@@ -165,13 +162,11 @@ button:hover {
 
 .modal-content {
   background-color: #fff;
-  margin: 45% auto;
+  margin: 20% auto;
   padding: 20px;
   width: 300px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-
-
 
 #cartTable {
   border-collapse: collapse; /* Essential for border styling of tables */
@@ -195,7 +190,6 @@ button:hover {
   border-radius: 0 10px 10px 0;
 }
 
-
 .h1carttitle {
   font-family: "Rubik", sans-serif;
 }
@@ -209,7 +203,6 @@ button:hover {
 #productcartbtn:active {
   background-color: #a7a7a7;
 }
-
 
 .checkbox-container {
   margin-top: 10%;
@@ -231,26 +224,24 @@ button:hover {
 }
 /* Tablet styles */
 @media (min-width: 769px) and (max-width: 1024px) {
+  .img {
+    background-color: red;
+    width: 30px;
+    height: 60px;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); */
+  }
 
+  #cartTable th,
+  #cartTable td {
+    /* border: 1px solid rgba(156, 156, 156, 0.507); */
+    padding: 4px;
+  }
 
-.img {
-  background-color: red;
-  width: 30px;
-  height: 60px;
-  border-radius: 10px;
-  /* box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); */
-}
-
-#cartTable th,
-#cartTable td {
-  /* border: 1px solid rgba(156, 156, 156, 0.507); */
-  padding: 4px;
-}
-
-.input {
-  background-color: transparent;
-  font-size: 1em;
-  width: 60px;
-  height: 60px;
-}
+  .input {
+    background-color: transparent;
+    font-size: 1em;
+    width: 60px;
+    height: 60px;
+  }
 }
